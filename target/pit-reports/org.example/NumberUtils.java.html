@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>NumberUtils.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package org.example;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Collections;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.LinkedList;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class NumberUtils {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    /**</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * This method receives two numbers, `left` and `right`, both represented as a list of digits.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * It adds these numbers and returns the result also as a list of digits.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * For example, if you want to add the numbers 23 and 42, you would need to create</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * a (left) list with two elements [2,3] and a (right) list with two elements [4,2].</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * 23+42 = 65, so the program would produce another list with two elements [6,5]</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * [2,3] + [4,2] = [6,5]</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * Each element in the left and right lists should be a number from [0-9].</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * An IllegalArgumentException is thrown in case this pre-condition does not hold.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     *</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param left  a list containing the left number. Null returns null, empty means 0.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @param right a list containing the right number. Null returns null, empty means 0.</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     * @return the sum of left and right, as a list</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>     */</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static List&#60;Integer&#62; add(List&#60;Integer&#62; left, List&#60;Integer&#62; right) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // if any is null, return null</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_28'/>
+28
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_28'>2</a>
+<span>
+1. add : negated conditional &rarr; KILLED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (left == null || right == null)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_29'/>
+29
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_29'>1</a>
+<span>
+1. add : replaced return value with Collections.emptyList for org/example/NumberUtils::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // reverse the numbers so that the least significant digit goes to the left.</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_32'/>
+32
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_32'>1</a>
+<span>
+1. add : removed call to java/util/Collections::reverse &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        Collections.reverse(left);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_33'/>
+33
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_33'>1</a>
+<span>
+1. add : removed call to java/util/Collections::reverse &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        Collections.reverse(right);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        LinkedList&#60;Integer&#62; result = new LinkedList&#60;&#62;();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // while there&#39;s a digit, keep summing them</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // if there&#39;s carry, take the carry into consideration</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int carry = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_40'/>
+40
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_40'>2</a>
+<span>
+1. add : changed conditional boundary &rarr; SURVIVED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        for (int i = 0; i &#60; Math.max(left.size(), right.size()); i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_42'/>
+42
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_42'>2</a>
+<span>
+1. add : changed conditional boundary &rarr; KILLED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            int leftDigit = left.size() &#62; i ? left.get(i) : 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_43'>2</a>
+<span>
+1. add : changed conditional boundary &rarr; KILLED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            int rightDigit = right.size() &#62; i ? right.get(i) : 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_45'>8</a>
+<span>
+1. add : negated conditional &rarr; KILLED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+3. add : changed conditional boundary &rarr; KILLED<br/>
+4. add : changed conditional boundary &rarr; KILLED<br/>
+5. add : changed conditional boundary &rarr; KILLED<br/>
+6. add : negated conditional &rarr; KILLED<br/>
+7. add : negated conditional &rarr; KILLED<br/>
+8. add : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (leftDigit &#60; 0 || leftDigit &#62; 9 || rightDigit &#60; 0 || rightDigit &#62; 9)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                throw new IllegalArgumentException();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_48'>2</a>
+<span>
+1. add : Replaced integer addition with subtraction &rarr; KILLED<br/>
+2. add : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            int sum = leftDigit + rightDigit + carry;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_50'/>
+50
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_50'>2</a>
+<span>
+1. add : Replaced integer modulus with multiplication &rarr; KILLED<br/>
+2. add : removed call to java/util/LinkedList::addFirst &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            result.addFirst(sum % 10);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_51'/>
+51
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_51'>1</a>
+<span>
+1. add : Replaced integer division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            carry = sum / 10;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // if there&#39;s some leftover carry, add it to the final number</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_55'/>
+55
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_55'>2</a>
+<span>
+1. add : changed conditional boundary &rarr; SURVIVED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (carry &#62; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_56'>1</a>
+<span>
+1. add : removed call to java/util/LinkedList::addFirst &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            result.addFirst(carry);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        // remove leading zeroes from the result</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_59'/>
+59
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_59'>3</a>
+<span>
+1. add : changed conditional boundary &rarr; SURVIVED<br/>
+2. add : negated conditional &rarr; KILLED<br/>
+3. add : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        while (result.size() &#62; 1 &#38;&#38; result.get(0) == 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            result.remove(0);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_62'/>
+62
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_62'>1</a>
+<span>
+1. add : replaced return value with Collections.emptyList for org/example/NumberUtils::add &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return result;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@446a692f_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_28'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNullInputs(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNullInputs(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_29'>29</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_29'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNullInputs(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> replaced return value with Collections.emptyList for org/example/NumberUtils::add &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_32'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testSizeCombinations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> removed call to java/util/Collections::reverse &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_33'>33</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_33'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testSizeCombinations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> removed call to java/util/Collections::reverse &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_40'>40</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_40'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_42'>42</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_42'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNonIntegerValues(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#4]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#4]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#4]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>7.<span><b>7</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>8.<span><b>8</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_50'>50</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_50'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> Replaced integer modulus with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> removed call to java/util/LinkedList::addFirst &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> Replaced integer division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_55'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> removed call to java/util/LinkedList::addFirst &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testLeadingZeros(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> negated conditional &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>add<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@446a692f_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@446a692f_62'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>add<br/><b>Killed by : </b>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2]</span></span> replaced return value with Collections.emptyList for org/example/NumberUtils::add &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNonIntegerValues(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#4] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:OutputTests]/[test-template:testOutputPartitions(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#4] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:OutputTests]/[test-template:testOutputPartitions(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testSizeCombinations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testSizeCombinations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testLeadingZeros(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testEmptyLists(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testLeadingZeros(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testSizeCombinations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:InputCombinationTests]/[test-template:testCarryOperations(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:OutputTests]/[test-template:testOutputPartitions(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (14 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNullInputs(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNonIntegerValues(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#5] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNonIntegerValues(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNonIntegerValues(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#2] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#5] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#4] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNonIntegerValues(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testInvalidDigitsStructural(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNullInputs(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#3] (0 ms)</li><li>org.example.NumberUtilsTest.[engine:junit-jupiter]/[class:org.example.NumberUtilsTest]/[nested-class:SingleInputTests]/[test-template:testNullInputs(org.example.NumberUtilsTest$TestCase)]/[test-template-invocation:#1] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.15.2
+
+</body>
+</html>
