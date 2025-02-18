@@ -1,9 +1,13 @@
 package org.example;
+
 import org.junit.jupiter.api.DisplayName;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -11,14 +15,13 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class NumberUtilsTest {
     /**
-     *
      * Step 1: understand the requirement, input type and output type
-     *        Requirement: Add two list of integer, index by index, and returns another list
+     * Requirement: Add two list of integer, index by index, and returns another list
      * Step 2 (raw):  Perform partition and boundary analysis on input and output
-     *        Each input: left | right
-     *        Combination of input:
-     *        Output:
-     *  Step 3: Derive potential test cases
+     * Each input: left | right
+     * Combination of input:
+     * Output:
+     * Step 3: Derive potential test cases
      */
 
     /*
@@ -65,9 +68,9 @@ class NumberUtilsTest {
             List<Integer> listWithSpecialChar = new ArrayList<>();
             List<Integer> mixedList = new ArrayList<>();
 
-            listWithChar.add((int)'a');
-            listWithSpecialChar.add((int)'$');
-            mixedList.add((int)'x');
+            listWithChar.add((int) 'a');
+            listWithSpecialChar.add((int) '$');
+            mixedList.add((int) 'x');
             mixedList.add(5);
 
             return Stream.of(
@@ -100,7 +103,10 @@ class NumberUtilsTest {
                     // Test adding empty list with left non-empty list
                     new TestCase(new ArrayList<>(List.of(5)), new ArrayList<>(List.of()), new ArrayList<>(List.of(5))),
                     // Test adding empty list with right non-empty list
-                    new TestCase(new ArrayList<>(List.of()), new ArrayList<>(List.of(5)), new ArrayList<>(List.of(5)))
+                    new TestCase(new ArrayList<>(List.of()), new ArrayList<>(List.of(5)), new ArrayList<>(List.of(5))),
+
+                    new TestCase(new ArrayList<>(List.of(0, 1)), new ArrayList<>(List.of(0)), new ArrayList<>(List.of(1)))
+
             );
         }
 
@@ -141,7 +147,10 @@ class NumberUtilsTest {
                     // Test multiple leading zeros in left input
                     new TestCase(new ArrayList<>(List.of(0, 0, 5)), new ArrayList<>(List.of(3)), new ArrayList<>(List.of(8))),
                     // Test all zeros in left input
-                    new TestCase(new ArrayList<>(List.of(0, 0, 0)), new ArrayList<>(List.of(1)), new ArrayList<>(List.of(1)))
+                    new TestCase(new ArrayList<>(List.of(0, 0, 0)), new ArrayList<>(List.of(1)), new ArrayList<>(List.of(1))),
+                    //Test zero addition doesn't result in empty output.
+                    new TestCase(new ArrayList<>(List.of(0)), new ArrayList<>(List.of(0)), new ArrayList<>(List.of(0)))
+
             );
         }
     }
@@ -166,6 +175,8 @@ class NumberUtilsTest {
                     new TestCase(new ArrayList<>(List.of(5, 4)), new ArrayList<>(List.of(2, 3)), new ArrayList<>(List.of(7, 7))),
                     // Left size < Right size
                     new TestCase(new ArrayList<>(List.of(5)), new ArrayList<>(List.of(3, 2, 1)), new ArrayList<>(List.of(3, 2, 6)))
+
+
             );
         }
 
@@ -228,3 +239,4 @@ class NumberUtilsTest {
         }
     }
 }
+
